@@ -1,0 +1,39 @@
+# [YOUR COMPANY NAME]
+
+> [One-line company description, 30-60 chars]
+
+## Products
+
+- [Product Name](https://product-url.com): Brief description of what this product does and who it helps
+- [Product Name 2](https://product-url-2.com): Brief description
+- [Product Name 3](https://product-url-3.com): Brief description
+
+## Company Info
+
+- Founded: [YEAR]
+- Team size: [NUMBER]
+- Tech Stack: [e.g. Next.js, TypeScript, PostgreSQL, Vercel]
+- Location: [City, Country]
+
+## What We Do
+
+[2-3 sentences describing the company's mission and core value proposition. Be specific about who you serve and what problem you solve.]
+
+## Key Features
+
+- [Feature 1]: [One-sentence explanation]
+- [Feature 2]: [One-sentence explanation]
+- [Feature 3]: [One-sentence explanation]
+
+## Contact
+
+- Website: https://your-domain.com
+- Email: hi@your-domain.com
+- Support: support@your-domain.com
+
+## Optional
+
+- [Blog](https://your-domain.com/blog)
+- [Docs](https://your-domain.com/docs)
+- [GitHub](https://github.com/your-org)
+- [Twitter/X](https://x.com/your-handle)

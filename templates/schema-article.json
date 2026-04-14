@@ -1,0 +1,54 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "[Article Title — Should be a question or clear claim, under 110 characters]",
+  "description": "[2-3 sentence summary of the article. This is what AI engines show as the snippet.]",
+  "url": "https://your-domain.com/blog/article-slug",
+  "datePublished": "[YYYY-MM-DD]",
+  "dateModified": "[YYYY-MM-DD]",
+  "author": {
+    "@type": "Person",
+    "name": "[Author Full Name]",
+    "url": "https://your-domain.com/author/author-slug",
+    "jobTitle": "[Job Title]",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "[YOUR COMPANY NAME]",
+      "url": "https://your-domain.com"
+    },
+    "sameAs": [
+      "https://x.com/author-handle",
+      "https://linkedin.com/in/author-profile"
+    ]
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "[YOUR COMPANY NAME]",
+    "url": "https://your-domain.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://your-domain.com/logo.png",
+      "width": 512,
+      "height": 512
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://your-domain.com/blog/article-slug/og-image.png",
+    "width": 1200,
+    "height": 630
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://your-domain.com/blog/article-slug"
+  },
+  "articleSection": "[Category, e.g. Tutorial / Guide / News / Opinion]",
+  "keywords": ["keyword1", "keyword2", "keyword3"],
+  "wordCount": [NUMBER],
+  "inLanguage": "en-US",
+  "isPartOf": {
+    "@type": "Blog",
+    "name": "[YOUR COMPANY NAME] Blog",
+    "url": "https://your-domain.com/blog"
+  }
+}

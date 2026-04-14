@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Acme Forms — Build Survey Forms That Actually Get Responses</title>
+  <meta name="description" content="Acme Forms helps SaaS companies build onboarding surveys, NPS forms, and feedback widgets that get 3x more responses. No code required. Free 14-day trial.">
+  <meta name="author" content="Acme Forms">
+  <link rel="canonical" href="https://acme-forms.example.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://acme-forms.example.com/">
+  <meta property="og:title" content="Acme Forms — High-Response Survey & Feedback Forms for SaaS">
+  <meta property="og:description" content="Build onboarding surveys, NPS forms, and feedback widgets that get 3x more responses. No code. Free trial.">
+  <meta property="og:image" content="https://acme-forms.example.com/og-image.png">
+  <meta property="og:site_name" content="Acme Forms">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@acmeforms">
+  <meta name="twitter:title" content="Acme Forms — Forms That Actually Get Responses">
+  <meta name="twitter:description" content="3x more responses on your onboarding surveys, NPS, and feedback forms. No code required.">
+  <meta name="twitter:image" content="https://acme-forms.example.com/twitter-card.png">
+
+  <!-- Schema.org: SoftwareApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Acme Forms",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://acme-forms.example.com",
+    "description": "Acme Forms is a no-code form builder for SaaS companies that specializes in onboarding surveys, NPS measurement, and in-app feedback widgets. Forms are designed for high completion rates.",
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Free Trial",
+        "price": "0",
+        "priceCurrency": "USD",
+        "description": "14-day free trial, no credit card required"
+      },
+      {
+        "@type": "Offer",
+        "name": "Starter",
+        "price": "29",
+        "priceCurrency": "USD",
+        "billingIncrement": "month"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pro",
+        "price": "79",
+        "priceCurrency": "USD",
+        "billingIncrement": "month"
+      }
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.7",
+      "reviewCount": "412",
+      "bestRating": "5"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Acme Forms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Acme Forms is a no-code form builder for SaaS companies that creates onboarding surveys, NPS forms, and feedback widgets optimized for high completion rates. It integrates with popular tools like Segment, Mixpanel, HubSpot, and Slack."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is Acme Forms different from Typeform or Google Forms?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Acme Forms is purpose-built for SaaS use cases (onboarding, NPS, churn prevention) and achieves 3x higher completion rates through conversational design and smart logic. Typeform is a general-purpose form tool; Google Forms lacks advanced logic and integrations."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Acme Forms require coding?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Acme Forms is entirely no-code. You can build, embed, and analyze forms through the visual dashboard. A JavaScript snippet embeds forms on your site in under 2 minutes."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, -apple-system, sans-serif; margin: 0; color: #111; line-height: 1.6; }
+    .hero { max-width: 780px; margin: 0 auto; padding: 5rem 2rem 3rem; text-align: center; }
+    .hero h1 { font-size: 2.8rem; line-height: 1.2; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; color: #444; max-width: 560px; margin: 0 auto 2rem; }
+    .cta-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .btn-primary { background: #7c3aed; color: white; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+    .btn-secondary { background: white; color: #7c3aed; border: 2px solid #7c3aed; padding: 0.8rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; }
+    .social-proof { font-size: 0.9rem; color: #666; margin-top: 1.5rem; }
+    .features { background: #f9fafb; padding: 4rem 2rem; }
+    .features-inner { max-width: 900px; margin: 0 auto; }
+    .features h2 { text-align: center; font-size: 1.8rem; margin-bottom: 2.5rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem; }
+    .feature-card { background: white; padding: 1.5rem; border-radius: 10px; border: 1px solid #e5e7eb; }
+    .feature-card h3 { margin: 0 0 0.5rem; font-size: 1.05rem; }
+    .feature-card p { margin: 0; color: #555; font-size: 0.95rem; }
+    .pricing { max-width: 860px; margin: 0 auto; padding: 4rem 2rem; }
+    .pricing h2 { text-align: center; font-size: 1.8rem; margin-bottom: 2.5rem; }
+    .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
+    .plan { border: 1px solid #e5e7eb; border-radius: 10px; padding: 2rem; }
+    .plan.highlight { border-color: #7c3aed; box-shadow: 0 0 0 2px #7c3aed22; }
+    .plan h3 { margin: 0 0 0.25rem; }
+    .plan .price { font-size: 2rem; font-weight: 700; color: #7c3aed; margin: 0.5rem 0; }
+    .plan .price span { font-size: 1rem; font-weight: 400; color: #666; }
+    .plan ul { padding-left: 1.2rem; margin: 1rem 0; color: #444; font-size: 0.9rem; }
+    .faq-section { background: #f9fafb; padding: 4rem 2rem; }
+    .faq-inner { max-width: 700px; margin: 0 auto; }
+    .faq-inner h2 { font-size: 1.8rem; margin-bottom: 2rem; }
+    details { border: 1px solid #e5e7eb; border-radius: 8px; padding: 1rem 1.25rem; margin-bottom: 0.75rem; background: white; }
+    summary { font-weight: 600; cursor: pointer; font-size: 1rem; }
+    details p { margin: 0.75rem 0 0; color: #444; }
+    footer { text-align: center; padding: 2rem; font-size: 0.85rem; color: #888; border-top: 1px solid #e5e7eb; }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <!-- AEO: Answer-first headline stating exactly what the product does -->
+    <h1>Survey Forms That Get <em>3x More Responses</em></h1>
+    <p>
+      Acme Forms helps SaaS companies collect better feedback with onboarding surveys,
+      NPS forms, and in-app widgets — no code required.
+    </p>
+    <div class="cta-group">
+      <a href="https://acme-forms.example.com/signup" class="btn-primary">Start Free Trial</a>
+      <a href="https://acme-forms.example.com/demo" class="btn-secondary">See a Demo</a>
+    </div>
+    <p class="social-proof">Free 14-day trial &middot; No credit card &middot; 4.7/5 from 412 reviews</p>
+  </section>
+
+  <section class="features">
+    <div class="features-inner">
+      <h2>Everything You Need to Understand Your Users</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Onboarding Surveys</h3>
+          <p>Ask new users why they signed up, what they're trying to accomplish, and what job they need done. Route them to the right activation path automatically.</p>
+        </div>
+        <div class="feature-card">
+          <h3>NPS Measurement</h3>
+          <p>Automated Net Promoter Score surveys triggered by time-in-product or milestones. Follow-up questions adjust based on the score automatically.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Churn Surveys</h3>
+          <p>Catch cancelling users with a one-question exit survey. Route detractors to your support team before they leave.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Smart Logic</h3>
+          <p>Branch questions based on previous answers. Show only what's relevant. Completion rates go up because forms feel shorter.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Native Integrations</h3>
+          <p>Push responses to Segment, HubSpot, Mixpanel, Slack, and 40+ tools. No Zapier tax required for core integrations.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Embed Anywhere</h3>
+          <p>One JavaScript snippet. Trigger forms on any page, on scroll, on exit intent, or after a user completes an action.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pricing">
+    <h2>Simple, Transparent Pricing</h2>
+    <div class="pricing-grid">
+      <div class="plan">
+        <h3>Starter</h3>
+        <div class="price">$29 <span>/month</span></div>
+        <ul>
+          <li>3 active forms</li>
+          <li>500 responses/month</li>
+          <li>Basic integrations</li>
+          <li>Email support</li>
+        </ul>
+      </div>
+      <div class="plan highlight">
+        <h3>Pro ⭐ Most Popular</h3>
+        <div class="price">$79 <span>/month</span></div>
+        <ul>
+          <li>Unlimited forms</li>
+          <li>5,000 responses/month</li>
+          <li>All integrations</li>
+          <li>Priority support</li>
+          <li>Custom branding</li>
+        </ul>
+      </div>
+      <div class="plan">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <ul>
+          <li>Unlimited responses</li>
+          <li>SSO / SAML</li>
+          <li>Dedicated CSM</li>
+          <li>SLA guarantee</li>
+          <li>Custom contracts</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-inner">
+      <h2>Frequently Asked Questions</h2>
+
+      <details>
+        <summary>What is Acme Forms?</summary>
+        <p>Acme Forms is a no-code form builder for SaaS companies that creates onboarding surveys, NPS forms, and feedback widgets optimized for high completion rates. It integrates with popular tools like Segment, Mixpanel, HubSpot, and Slack.</p>
+      </details>
+
+      <details>
+        <summary>How is Acme Forms different from Typeform or Google Forms?</summary>
+        <p>Acme Forms is purpose-built for SaaS use cases (onboarding, NPS, churn prevention) and achieves higher completion rates through conversational design and smart logic. Typeform is a general-purpose form tool; Google Forms lacks advanced logic and integrations.</p>
+      </details>
+
+      <details>
+        <summary>Does Acme Forms require coding?</summary>
+        <p>No. Acme Forms is entirely no-code. You build and manage forms in the visual dashboard. A single JavaScript snippet embeds forms on your site in under 2 minutes.</p>
+      </details>
+
+      <details>
+        <summary>What integrations does Acme Forms support?</summary>
+        <p>Native integrations include Segment, HubSpot, Mixpanel, Intercom, Amplitude, Slack, and Zapier. Full integration list at acme-forms.example.com/integrations.</p>
+      </details>
+
+      <details>
+        <summary>How do I start a free trial?</summary>
+        <p>Go to acme-forms.example.com/signup, enter your email, and your account is ready in 30 seconds. No credit card required. The trial lasts 14 days with full Pro access.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <p>Acme Forms &mdash; <a href="https://acme-forms.example.com">acme-forms.example.com</a> &mdash; hi@acme-forms.example.com</p>
+    <p>&copy; 2026 Acme Forms Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+  </footer>
+
+</body>
+</html>

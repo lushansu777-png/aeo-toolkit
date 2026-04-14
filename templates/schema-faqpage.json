@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is [YOUR PRODUCT NAME]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[YOUR PRODUCT NAME] is a [type of tool] that helps [target audience] [achieve specific outcome]. It works by [brief mechanism]. Unlike [competitor/alternative], [YOUR PRODUCT NAME] [key differentiator]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does [YOUR PRODUCT NAME] cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "[YOUR PRODUCT NAME] offers [FREE TIER description if applicable]. Paid plans start at $[PRICE]/month for [PLAN NAME], which includes [key features]. Enterprise pricing is available at [contact method]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with [YOUR PRODUCT NAME]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Getting started takes less than 5 minutes: 1) Sign up at https://your-domain.com/signup 2) [Step 2] 3) [Step 3]. No credit card required for the free tier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What makes [YOUR PRODUCT NAME] different from [MAIN COMPETITOR]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The main differences are: [DIFFERENCE 1], [DIFFERENCE 2], and [DIFFERENCE 3]. [YOUR PRODUCT NAME] is best for [use case], while [COMPETITOR] is better for [other use case]."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does [YOUR PRODUCT NAME] integrate with [POPULAR TOOL]?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, [YOUR PRODUCT NAME] integrates with [LIST INTEGRATIONS]. You can also connect to thousands of other apps via [Zapier/Make/API]. Full integration docs are at https://your-domain.com/docs/integrations."
+      }
+    }
+  ]
+}

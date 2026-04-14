@@ -1,0 +1,82 @@
+<!-- ============================================================
+  AEO-Optimized Meta Tags Template
+  Copy this into your <head> section and fill in the placeholders.
+  ============================================================ -->
+
+<!-- Primary Meta Tags -->
+<title>[Page Title — Under 60 chars, include primary keyword]</title>
+<meta name="title" content="[Page Title — Under 60 chars]">
+<meta name="description" content="[150-160 char description. Answer the user's question directly in this snippet. AI engines often use this as the citation excerpt.]">
+<meta name="keywords" content="[keyword1, keyword2, keyword3]">
+<meta name="author" content="[Author Name]">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://your-domain.com/current-page">
+
+<!-- Language & Region -->
+<meta http-equiv="content-language" content="en">
+<link rel="alternate" hreflang="en" href="https://your-domain.com/current-page">
+<link rel="alternate" hreflang="zh-TW" href="https://your-domain.com/zh-TW/current-page">
+<link rel="alternate" hreflang="x-default" href="https://your-domain.com/current-page">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://your-domain.com/current-page">
+<meta property="og:title" content="[OG Title — Can be slightly longer than meta title, 60-90 chars]">
+<meta property="og:description" content="[OG Description — 200-300 chars. Can be more detailed than meta description.]">
+<meta property="og:image" content="https://your-domain.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="[Image description for accessibility]">
+<meta property="og:site_name" content="[YOUR COMPANY NAME]">
+<meta property="og:locale" content="en_US">
+
+<!-- Article-specific OG (use for blog posts) -->
+<!--
+<meta property="article:published_time" content="[YYYY-MM-DDTHH:MM:SSZ]">
+<meta property="article:modified_time" content="[YYYY-MM-DDTHH:MM:SSZ]">
+<meta property="article:author" content="https://your-domain.com/author/author-name">
+<meta property="article:section" content="[Category]">
+<meta property="article:tag" content="[tag1]">
+<meta property="article:tag" content="[tag2]">
+-->
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@your-handle">
+<meta name="twitter:creator" content="@author-handle">
+<meta name="twitter:url" content="https://your-domain.com/current-page">
+<meta name="twitter:title" content="[Twitter Title — Under 70 chars]">
+<meta name="twitter:description" content="[Twitter Description — Under 200 chars]">
+<meta name="twitter:image" content="https://your-domain.com/twitter-card.png">
+<meta name="twitter:image:alt" content="[Image description]">
+
+<!-- Schema.org JSON-LD (place in <head> or before </body>) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "[Page Title]",
+  "description": "[Page Description]",
+  "url": "https://your-domain.com/current-page",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "[YOUR COMPANY NAME]",
+    "url": "https://your-domain.com"
+  },
+  "breadcrumb": {
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://your-domain.com"},
+      {"@type": "ListItem", "position": 2, "name": "[Current Page]", "item": "https://your-domain.com/current-page"}
+    ]
+  }
+}
+</script>
+
+<!-- Preconnect for performance (helps AI crawlers too) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">

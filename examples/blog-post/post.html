@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- AEO: Title as a direct question AI engines will match -->
+  <title>How Does Google Analytics 4 Track Users Without Cookies? — Acme Blog</title>
+  <meta name="description" content="GA4 uses a combination of first-party cookies, User-ID, Google Signals, and modeling to track users across sessions. Here's exactly how each method works and what data it captures.">
+  <meta name="author" content="Jane Smith">
+  <link rel="canonical" href="https://acme-analytics.example.com/blog/ga4-cookieless-tracking">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://acme-analytics.example.com/blog/ga4-cookieless-tracking">
+  <meta property="og:title" content="How Does GA4 Track Users Without Cookies?">
+  <meta property="og:description" content="GA4 uses first-party cookies, User-ID, Google Signals, and modeling. Here's how each method works.">
+  <meta property="og:image" content="https://acme-analytics.example.com/blog/ga4-cookieless-tracking/og.png">
+  <meta property="article:published_time" content="2026-01-15T09:00:00Z">
+  <meta property="article:modified_time" content="2026-03-20T12:00:00Z">
+  <meta property="article:author" content="https://acme-analytics.example.com/author/jane-smith">
+  <meta property="article:section" content="Analytics">
+  <meta property="article:tag" content="Google Analytics">
+  <meta property="article:tag" content="Privacy">
+  <meta property="article:tag" content="Cookieless Tracking">
+
+  <!-- Schema.org: Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How Does Google Analytics 4 Track Users Without Cookies?",
+    "description": "GA4 uses a combination of first-party cookies, User-ID, Google Signals, and modeling to track users across sessions.",
+    "url": "https://acme-analytics.example.com/blog/ga4-cookieless-tracking",
+    "datePublished": "2026-01-15",
+    "dateModified": "2026-03-20",
+    "author": {
+      "@type": "Person",
+      "name": "Jane Smith",
+      "url": "https://acme-analytics.example.com/author/jane-smith",
+      "jobTitle": "Head of Product",
+      "sameAs": ["https://x.com/janesmith", "https://linkedin.com/in/jane-smith"]
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Acme Analytics",
+      "url": "https://acme-analytics.example.com",
+      "logo": {"@type": "ImageObject", "url": "https://acme-analytics.example.com/logo.png"}
+    },
+    "image": "https://acme-analytics.example.com/blog/ga4-cookieless-tracking/og.png",
+    "wordCount": 1800,
+    "keywords": ["Google Analytics 4", "cookieless tracking", "User-ID", "Google Signals", "privacy"],
+    "isPartOf": {"@type": "Blog", "name": "Acme Analytics Blog", "url": "https://acme-analytics.example.com/blog"}
+  }
+  </script>
+
+  <!-- Schema.org: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acme-analytics.example.com"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://acme-analytics.example.com/blog"},
+      {"@type": "ListItem", "position": 3, "name": "GA4 Cookieless Tracking", "item": "https://acme-analytics.example.com/blog/ga4-cookieless-tracking"}
+    ]
+  }
+  </script>
+
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 740px; margin: 0 auto; padding: 2rem; line-height: 1.7; color: #1a1a1a; }
+    nav { font-size: 0.85rem; color: #666; margin-bottom: 2rem; }
+    nav a { color: #2563eb; text-decoration: none; }
+    h1 { font-size: 2rem; line-height: 1.3; }
+    .byline { font-size: 0.9rem; color: #666; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #e5e7eb; }
+    .byline a { color: #2563eb; text-decoration: none; }
+    .answer-box { background: #f0f9ff; border-left: 4px solid #2563eb; padding: 1rem 1.5rem; margin: 1.5rem 0; border-radius: 0 6px 6px 0; }
+    h2 { margin-top: 2.5rem; font-size: 1.4rem; }
+    h3 { font-size: 1.1rem; color: #374151; }
+    table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; }
+    th, td { border: 1px solid #e5e7eb; padding: 0.6rem 1rem; text-align: left; font-size: 0.9rem; }
+    th { background: #f9fafb; font-weight: 600; }
+    .tag { display: inline-block; background: #e5e7eb; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; margin-right: 0.4rem; }
+    footer { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid #e5e7eb; font-size: 0.85rem; color: #666; }
+  </style>
+</head>
+<body>
+
+  <!-- AEO: Breadcrumb navigation (visible + structured data) -->
+  <nav aria-label="Breadcrumb">
+    <a href="https://acme-analytics.example.com">Home</a> &rsaquo;
+    <a href="https://acme-analytics.example.com/blog">Blog</a> &rsaquo;
+    GA4 Cookieless Tracking
+  </nav>
+
+  <!-- AEO: Question-format headline -->
+  <h1>How Does Google Analytics 4 Track Users Without Cookies?</h1>
+
+  <div class="byline">
+    By <a href="https://acme-analytics.example.com/author/jane-smith">Jane Smith</a>,
+    Head of Product at Acme Analytics &mdash;
+    Published January 15, 2026 &middot; Updated March 20, 2026 &middot; 8 min read
+    <br>
+    <span class="tag">Analytics</span>
+    <span class="tag">Privacy</span>
+    <span class="tag">Cookieless</span>
+  </div>
+
+  <!-- AEO: Answer-first paragraph — put the direct answer before any context -->
+  <div class="answer-box">
+    <strong>Short answer:</strong> GA4 doesn't fully track without cookies. It uses
+    <strong>first-party cookies</strong> for session tracking, then fills gaps with
+    <strong>User-ID</strong> (logged-in users), <strong>Google Signals</strong> (cross-device),
+    and <strong>machine learning modeling</strong> for users who decline consent.
+  </div>
+
+  <p>
+    When Google announced GA4 as "cookieless-ready," it caused widespread confusion.
+    Does GA4 actually work without cookies? The answer is: partly. GA4 reduces cookie
+    dependency but does not eliminate it. Here's exactly how each tracking mechanism works.
+  </p>
+
+  <h2>The 4 Ways GA4 Tracks Users</h2>
+
+  <h3>1. First-Party Cookies (Default)</h3>
+  <p>
+    By default, GA4 still writes a first-party cookie (<code>_ga</code>) to your domain
+    to identify returning visitors. This cookie is set for 2 years and is readable only
+    by your domain — not Google's. First-party cookies are less affected by browser
+    restrictions than third-party cookies, but they still require consent under GDPR.
+  </p>
+
+  <h3>2. User-ID (Logged-In Users)</h3>
+  <p>
+    If your site has user authentication, you can pass a stable User-ID to GA4.
+    This ID persists across devices and browsers, letting GA4 stitch together a
+    complete user journey. User-ID tracking is the most accurate method but only
+    works for authenticated users — typically 20-40% of your total traffic.
+  </p>
+
+  <h3>3. Google Signals (Cross-Device)</h3>
+  <p>
+    Google Signals links sessions across devices when users are signed into a Google
+    account. It is opt-in at the property level and requires users to have enabled
+    "Ad personalization." This is the most powerful cross-device signal but depends
+    entirely on Google account sign-in.
+  </p>
+
+  <h3>4. Modeling & Blended Data</h3>
+  <p>
+    For users who decline consent, GA4 (with Consent Mode v2) fills data gaps using
+    machine learning models trained on consenting users with similar characteristics.
+    Google calls this "behavioral modeling." It's disclosed in aggregate reports with
+    a modeling indicator.
+  </p>
+
+  <h2>Comparison: GA4 Tracking Methods</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Method</th>
+        <th>Requires Consent?</th>
+        <th>Works Without Login?</th>
+        <th>Cross-Device?</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>First-party cookie</td>
+        <td>Yes (GDPR)</td>
+        <td>Yes</td>
+        <td>No</td>
+      </tr>
+      <tr>
+        <td>User-ID</td>
+        <td>Yes</td>
+        <td>No (login required)</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Google Signals</td>
+        <td>Yes</td>
+        <td>No (Google login)</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>Modeling</td>
+        <td>No</td>
+        <td>Yes</td>
+        <td>Partial</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>What This Means for Your Analytics Setup</h2>
+  <p>
+    If you need fully cookieless, consent-free analytics, GA4 alone won't get you there.
+    You'll either need to implement Consent Mode v2 (with its modeling limitations) or
+    use a cookieless analytics alternative like Plausible, Fathom, or Acme Analytics.
+  </p>
+
+  <h2>Conclusion</h2>
+  <p>
+    GA4 is <em>more</em> privacy-friendly than Universal Analytics but still relies on
+    cookies by default. For complete cookieless tracking, you need either User-ID
+    (logged-in users only) or a third-party tool designed around cookieless measurement.
+    The "cookieless future" GA4 was designed for is a future where third-party cookies
+    are gone — not first-party cookies.
+  </p>
+
+  <footer>
+    <p>
+      <strong>About the author:</strong>
+      <a href="https://acme-analytics.example.com/author/jane-smith">Jane Smith</a>
+      is Head of Product at Acme Analytics. She writes about privacy, web analytics, and GDPR compliance.
+    </p>
+    <p>
+      <strong>Related:</strong>
+      <a href="#">How to implement cookieless analytics</a> &middot;
+      <a href="#">GDPR consent requirements for analytics</a> &middot;
+      <a href="#">GA4 vs Plausible: honest comparison</a>
+    </p>
+  </footer>
+
+</body>
+</html>

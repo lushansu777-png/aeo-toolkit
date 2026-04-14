@@ -1,0 +1,72 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "[YOUR COMPANY NAME]",
+  "alternateName": "[Short name or abbreviation]",
+  "url": "https://your-domain.com",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://your-domain.com/logo.png",
+    "width": 512,
+    "height": 512
+  },
+  "description": "[2-3 sentence company description for AI engines to use when asked about your company]",
+  "foundingDate": "[YEAR]",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": "[NUMBER]"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "[City]",
+    "addressCountry": "[Country Code, e.g. US, TW, UK]"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "email": "hi@your-domain.com",
+      "contactType": "customer service",
+      "availableLanguage": ["English"]
+    },
+    {
+      "@type": "ContactPoint",
+      "email": "support@your-domain.com",
+      "contactType": "technical support",
+      "availableLanguage": ["English"]
+    }
+  ],
+  "sameAs": [
+    "https://x.com/your-handle",
+    "https://linkedin.com/company/your-company",
+    "https://github.com/your-org",
+    "https://www.crunchbase.com/organization/your-company"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Products & Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "[Product Name 1]",
+          "url": "https://your-domain.com/product-1",
+          "description": "[Product description]",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "SoftwareApplication",
+          "name": "[Product Name 2]",
+          "url": "https://your-domain.com/product-2",
+          "description": "[Product description]",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web"
+        }
+      }
+    ]
+  }
+}

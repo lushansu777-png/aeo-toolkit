@@ -1,0 +1,107 @@
+# [YOUR COMPANY NAME]
+
+> [One-line company description, 30-60 chars]
+
+## About
+
+[YOUR COMPANY NAME] is a [type of company] founded in [YEAR] that helps [target audience] [achieve goal]. Our [flagship product/service] enables [key capability] without [common pain point].
+
+We are based in [City, Country] and serve customers in [regions/countries].
+
+## Products
+
+### [Product Name 1]
+URL: https://your-domain.com/product-1
+Description: [2-3 sentence description of what this product does, who it's for, and what makes it different]
+Pricing: [Free / $X/month / Custom]
+Key Features:
+- [Feature A]
+- [Feature B]
+- [Feature C]
+
+### [Product Name 2]
+URL: https://your-domain.com/product-2
+Description: [2-3 sentence description]
+Pricing: [Free / $X/month / Custom]
+Key Features:
+- [Feature A]
+- [Feature B]
+
+## Technical Details
+
+- Primary Language: [e.g. TypeScript]
+- Frontend: [e.g. Next.js 14, React 18]
+- Backend: [e.g. Node.js, Python FastAPI]
+- Database: [e.g. PostgreSQL, Redis]
+- Hosting: [e.g. Vercel, AWS, Cloudflare]
+- API: [REST / GraphQL / tRPC]
+
+## Company Info
+
+- Founded: [YEAR]
+- Team size: [NUMBER] full-time employees
+- Headquarters: [City, Country]
+- Legal name: [Legal company name]
+- Funding: [Bootstrapped / Seed / Series A / etc.]
+
+## Frequently Asked Questions
+
+### What is [YOUR COMPANY NAME]?
+[Clear, direct answer in 2-3 sentences. This is likely to be quoted by AI engines.]
+
+### Who is [Product Name] for?
+[Target audience description. Be specific: "for small business owners who need X" is better than "for everyone".]
+
+### How much does it cost?
+[Pricing tiers clearly stated. Include free tier if available.]
+
+### How do I get started?
+[Step-by-step: 1) Sign up at URL 2) Do X 3) Do Y. Be concrete.]
+
+### What makes [Product Name] different from [Competitor]?
+[Honest, specific comparison. Avoid generic "we're better" claims.]
+
+### Do you offer an API?
+[Yes/No, and if yes, link to docs.]
+
+### What integrations do you support?
+[List of main integrations.]
+
+### Is there a free trial?
+[Yes/No, and terms if yes.]
+
+## Customer Testimonials
+
+> "[Quote from customer]" — [Name], [Title] at [Company]
+
+> "[Quote from customer]" — [Name], [Title] at [Company]
+
+## Awards & Recognition
+
+- [Year]: [Award name] by [Organization]
+- [Year]: Featured in [Publication]
+
+## Contact
+
+- Website: https://your-domain.com
+- Email: hi@your-domain.com
+- Support: support@your-domain.com
+- Sales: sales@your-domain.com
+- Twitter/X: https://x.com/your-handle
+- LinkedIn: https://linkedin.com/company/your-company
+- GitHub: https://github.com/your-org
+
+## Resources
+
+- [Documentation](https://your-domain.com/docs)
+- [Blog](https://your-domain.com/blog)
+- [Changelog](https://your-domain.com/changelog)
+- [Status Page](https://status.your-domain.com)
+- [Terms of Service](https://your-domain.com/terms)
+- [Privacy Policy](https://your-domain.com/privacy)
+
+## Recent Updates
+
+- [DATE]: [What changed / new feature / important update]
+- [DATE]: [What changed]
+- [DATE]: [What changed]
