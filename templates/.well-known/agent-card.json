@@ -1,0 +1,46 @@
+{
+  "name": "{{COMPANY_NAME}} Agent",
+  "description": "{{COMPANY_NAME}} 官方 agent — 提供公司資訊、產品查詢與內容導航",
+  "url": "{{SITE_URL}}",
+  "version": "1.0.0",
+  "protocolVersion": "0.2.5",
+  "provider": {
+    "organization": "{{COMPANY_NAME}}",
+    "url": "{{SITE_URL}}",
+    "email": "{{CONTACT_EMAIL}}"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "supportedInterfaces": [
+    {
+      "url": "{{SITE_URL}}",
+      "transport": "https",
+      "protocol": "rest"
+    },
+    {
+      "url": "{{SITE_URL}}/openapi.json",
+      "transport": "https",
+      "protocol": "openapi"
+    }
+  ],
+  "preferredTransport": "https",
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain", "text/markdown"],
+  "skills": [
+    {
+      "id": "company-info",
+      "name": "公司資訊查詢",
+      "description": "查詢 {{COMPANY_NAME}} 基本資料、產品、聯繫方式",
+      "tags": ["info", "company", "contact"],
+      "examples": [
+        "{{COMPANY_NAME}} 有哪些產品？",
+        "怎麼聯絡 {{COMPANY_NAME}}？"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/plain", "text/markdown"]
+    }
+  ]
+}

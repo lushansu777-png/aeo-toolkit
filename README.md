@@ -26,11 +26,21 @@ aeo-toolkit/
 │   ├── llms.txt                    # AI 爬蟲導覽（llmstxt.org 規格）
 │   ├── llms-full.txt               # AI 完整參考
 │   ├── robots.txt                  # 允許 GPTBot/ClaudeBot 等
+│   ├── robots-agent-ready.txt      # Level 2 版：加 Content-Signal（NEW）
+│   ├── vercel-agent-ready.json     # Vercel host 配置含 Link headers（NEW）
 │   ├── schema-organization.json    # Organization JSON-LD
 │   ├── schema-faqpage.json         # FAQPage JSON-LD
 │   ├── schema-article.json         # Article JSON-LD
 │   ├── schema-breadcrumb.json      # BreadcrumbList JSON-LD
-│   └── opengraph-meta.html         # OpenGraph/Twitter Card
+│   ├── opengraph-meta.html         # OpenGraph/Twitter Card
+│   └── .well-known/                # Agent-Ready 協議檔（NEW）
+│       ├── mcp/server-card.json    # MCP Server Card (SEP-1649)
+│       ├── agent-card.json         # A2A Agent Card
+│       ├── agent-skills/           # Claude Agent Skills
+│       ├── api-catalog             # RFC 9727 linkset+json
+│       ├── ai-plugin.json          # ChatGPT plugin manifest
+│       ├── oauth-protected-resource  # RFC 9728
+│       └── oauth-authorization-server # RFC 8414
 │
 ├── examples/           # 完整實作範例
 │   ├── simple-site/                # 簡單靜態網站範例
@@ -39,6 +49,7 @@ aeo-toolkit/
 │
 ├── scripts/            # 自動化工具
 │   ├── verify-aeo.sh               # 驗證你的網站 AEO 設定
+│   ├── agent-ready-scan.sh         # 掃描 Agent-Ready 等級（NEW）
 │   ├── generate-llms-txt.py        # 從網站結構自動產生 llms.txt
 │   └── count-api.js                # Vercel Edge Function 計數 API
 │
@@ -50,6 +61,43 @@ aeo-toolkit/
     ├── common-mistakes.md          # 常見錯誤
     └── platform-differences.md     # 各平台差異（ChatGPT vs Perplexity vs Claude）
 ```
+
+
+
+## 🤖 Agent-Ready 升級（AEO v2）
+
+AEO 讓 AI **引用**你的內容；Agent-Ready 讓 AI **呼叫**你的服務。
+
+### 5 等級評分（[isitagentready.com](https://isitagentready.com)）
+
+| Level | 名稱 | 關鍵檔案 |
+|---|---|---|
+| 1 | Basic Web Presence | robots.txt + sitemap |
+| 2 | Bot-Aware | + Content-Signal |
+| 3 | Agent-Accessible | + Link headers + Markdown 協商 |
+| 4 | Agent-Integrated | + MCP/A2A/Agent Skills/API Catalog |
+| 5 | Agent-Native | + OAuth 發現元資料 |
+
+### 一鍵升級
+
+```bash
+# 1. 複製所有 agent-ready 模板
+cp -r templates/.well-known /your-site/public/
+cp templates/robots-agent-ready.txt /your-site/public/robots.txt
+cp templates/vercel-agent-ready.json /your-site/vercel.json
+
+# 2. 批次替換佔位符
+find /your-site/public/.well-known -type f -exec sed -i '' \
+  -e 's|{{SITE_URL}}|https://example.com|g' \
+  -e 's|{{COMPANY_NAME}}|你的公司|g' \
+  -e 's|{{COMPANY_SLUG}}|your-company|g' \
+  -e 's|{{CONTACT_EMAIL}}|you@domain.com|g' {} \;
+
+# 3. 驗證等級
+bash scripts/agent-ready-scan.sh https://example.com
+```
+
+詳細說明：[docs/agent-ready-guide.md](docs/agent-ready-guide.md)
 
 ## 快速開始（5 分鐘）
 
