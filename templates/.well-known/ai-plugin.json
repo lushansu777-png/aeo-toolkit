@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "{{COMPANY_NAME}}",
+  "name_for_model": "{{COMPANY_SLUG}}",
+  "description_for_human": "{{COMPANY_DESCRIPTION}}",
+  "description_for_model": "{{COMPANY_DESCRIPTION_EN}} Use this plugin to look up company info, products, and content.",
+  "auth": { "type": "none" },
+  "api": {
+    "type": "openapi",
+    "url": "{{SITE_URL}}/openapi.json"
+  },
+  "logo_url": "{{SITE_URL}}/logo.png",
+  "contact_email": "{{CONTACT_EMAIL}}",
+  "legal_info_url": "{{SITE_URL}}/"
+}

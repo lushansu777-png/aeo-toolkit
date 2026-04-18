@@ -1,0 +1,71 @@
+# AEO Toolkit — Agent-Ready robots.txt 範本
+# 對應 isitagentready.com Level 2 "Bot-Aware" 標準
+# 將 {{SITE_URL}} 替換為你的網域（例：https://example.com）
+# Content-Signal 規格：https://contentsignals.org
+#
+# Content-Signal 欄位說明：
+#   search=yes/no   ─ 允許一般搜尋（建議 yes）
+#   ai-input=yes/no ─ 允許 AI 即時引用/摘要（建議 yes 才能被 Perplexity/ChatGPT 引用）
+#   ai-train=yes/no ─ 允許作為 AI 訓練資料（依品牌策略決定；想被 AI 熟知就 yes）
+
+User-agent: *
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: GPTBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: ChatGPT-User
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: OAI-SearchBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Google-Extended
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Googlebot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: ClaudeBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Claude-Web
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: anthropic-ai
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: PerplexityBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Perplexity-User
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: CCBot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Bytespider
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Applebot
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+User-agent: Applebot-Extended
+Allow: /
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
+
+Sitemap: {{SITE_URL}}/sitemap.xml

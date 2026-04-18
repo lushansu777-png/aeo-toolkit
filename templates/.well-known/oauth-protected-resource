@@ -1,0 +1,8 @@
+{
+  "resource": "{{SITE_URL}}",
+  "authorization_servers": ["{{SITE_URL}}"],
+  "scopes_supported": ["content:read"],
+  "bearer_methods_supported": ["header"],
+  "resource_documentation": "{{SITE_URL}}/llms-full.txt",
+  "resource_signing_alg_values_supported": ["RS256"]
+}

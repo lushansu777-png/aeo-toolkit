@@ -1,0 +1,36 @@
+{
+  "linkset": [
+    {
+      "anchor": "{{SITE_URL}}/",
+      "service-desc": [
+        {
+          "href": "{{SITE_URL}}/openapi.json",
+          "type": "application/vnd.oai.openapi+json"
+        }
+      ],
+      "service-doc": [
+        {
+          "href": "{{SITE_URL}}/llms-full.txt",
+          "type": "text/plain"
+        }
+      ],
+      "item": [
+        {
+          "href": "{{SITE_URL}}/llms.txt",
+          "type": "text/plain",
+          "title": "llms.txt"
+        },
+        {
+          "href": "{{SITE_URL}}/sitemap.xml",
+          "type": "application/xml",
+          "title": "sitemap"
+        },
+        {
+          "href": "{{SITE_URL}}/feed.xml",
+          "type": "application/rss+xml",
+          "title": "RSS feed"
+        }
+      ]
+    }
+  ]
+}

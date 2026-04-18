@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "2024-11-05",
+  "serverInfo": {
+    "name": "{{COMPANY_SLUG}}-content",
+    "version": "1.0.0",
+    "title": "{{COMPANY_NAME}} Content Server",
+    "description": "{{COMPANY_NAME}} 公司資訊與內容資源 MCP Server Card"
+  },
+  "transport": {
+    "type": "http",
+    "endpoint": "{{SITE_URL}}"
+  },
+  "capabilities": {
+    "resources": {
+      "subscribe": false,
+      "listChanged": false
+    },
+    "tools": {},
+    "prompts": {},
+    "logging": {}
+  },
+  "publisher": {
+    "name": "{{COMPANY_NAME}}",
+    "url": "{{SITE_URL}}",
+    "email": "{{CONTACT_EMAIL}}"
+  },
+  "documentation": "{{SITE_URL}}/llms-full.txt",
+  "resources": [
+    {
+      "uri": "{{SITE_URL}}/llms.txt",
+      "name": "llms.txt",
+      "description": "公司與產品摘要",
+      "mimeType": "text/plain"
+    },
+    {
+      "uri": "{{SITE_URL}}/sitemap.xml",
+      "name": "sitemap",
+      "description": "站點地圖",
+      "mimeType": "application/xml"
+    },
+    {
+      "uri": "{{SITE_URL}}/feed.xml",
+      "name": "feed",
+      "description": "RSS feed",
+      "mimeType": "application/rss+xml"
+    },
+    {
+      "uri": "{{SITE_URL}}/openapi.json",
+      "name": "openapi",
+      "description": "OpenAPI 規格",
+      "mimeType": "application/vnd.oai.openapi+json"
+    }
+  ]
+}

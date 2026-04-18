@@ -1,0 +1,12 @@
+{
+  "schemaVersion": "1.0.0",
+  "skills": [
+    {
+      "id": "example-skill",
+      "name": "範例技能",
+      "description": "這是範例 skill，替換為你的實際技能",
+      "manifestUrl": "{{SITE_URL}}/.well-known/agent-skills/example-skill/SKILL.md",
+      "version": "1.0.0"
+    }
+  ]
+}
